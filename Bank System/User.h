@@ -20,6 +20,7 @@ public:
     {
         if (amount <= 0) return false;
         balance += amount;
+		history.push_back(Transaction("Deposit", amount, "-"));
         return true;
     }
 
@@ -27,6 +28,7 @@ public:
     {
         if (amount <= 0 || amount > balance) return false;
         balance -= amount;
+		history.push_back(Transaction("Withdraw", amount, "-"));
         return true;
 	}
 

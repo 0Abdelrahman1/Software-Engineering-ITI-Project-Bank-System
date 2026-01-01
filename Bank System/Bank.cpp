@@ -35,8 +35,9 @@ bool Bank::TransferBalance(const string& from_id, const string& to_id, double am
     User* from_user = FindUser(from_id);
     User* to_user = FindUser(to_id);
     if (!from_user || !to_user) return false;
-    if (!from_user->Withdraw(amount)) return false;
-    to_user->Deposit(amount);
+    if (amount <= 0 || amount > from_user->balance) return false;
+	from_user->balance -= amount;
+    to_user->balance += amount;
     from_user->AddTransaction(Transaction("Transfer", amount, to_id));
     return true;
 }
@@ -69,7 +70,10 @@ void Bank::LoadFromFile()
         string id;
         string name, pwd, phone;
         double balance;
-        cin >> id >> name >> pwd >> phone >> balance;
+        cin >> id;
+		cin.ignore(); // to skip the newline after id
+        getline(cin, name);
+        cin >> pwd >> phone >> balance;
         User u(id, name, pwd, phone, balance);
         int tx_count; cin >> tx_count;
         while (tx_count--)
@@ -91,7 +95,7 @@ void Bank::SaveToFile()
     cout << users.size() << endl;
     for (const auto& u : users)
     {
-        cout << u.id << " " << u.name << " " << u.password << " "
+        cout << u.id << " " << u.name << "\n" << u.password << " "
             << u.phone << " " << u.balance << endl;
         cout << '\t' << u.history.size() << endl;
         for (const auto& tx : u.history)

@@ -124,6 +124,7 @@
     <ClCompile Include="Bank.cpp" />
     <ClCompile Include="LoginForm.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="UserForm.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AdminForm.h">
@@ -135,6 +136,9 @@
     </ClInclude>
     <ClInclude Include="Transaction.h" />
     <ClInclude Include="User.h" />
+    <ClInclude Include="UserForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="AdminForm.resx">
@@ -142,6 +146,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForm.resx">
+      <DependentUpon>UserForm.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

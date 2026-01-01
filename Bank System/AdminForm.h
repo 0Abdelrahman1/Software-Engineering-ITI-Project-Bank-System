@@ -19,6 +19,7 @@ namespace BankSystem {
 		{
 			InitializeComponent();
 			auto& bank = Bank::Instance();
+			this->button1_Click(this->button1, System::EventArgs::Empty);
 			//text box
 			this->textBox1->Text = marshal_as<System::String^>(bank.nextID());
 			this->textBox1->ForeColor = System::Drawing::Color::Silver;
@@ -240,6 +241,7 @@ private: System::Windows::Forms::Label^ label13;
 			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle3 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
 			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle4 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
+			this->label13 = (gcnew System::Windows::Forms::Label());
 			this->button7 = (gcnew System::Windows::Forms::Button());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->panel2 = (gcnew System::Windows::Forms::Panel());
@@ -295,7 +297,6 @@ private: System::Windows::Forms::Label^ label13;
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->pn_add = (gcnew System::Windows::Forms::Panel());
-			this->label13 = (gcnew System::Windows::Forms::Label());
 			this->panel1->SuspendLayout();
 			this->panel2->SuspendLayout();
 			this->pn_show->SuspendLayout();
@@ -316,7 +317,7 @@ private: System::Windows::Forms::Label^ label13;
 			// 
 			// panel1
 			// 
-			this->panel1->BackColor = System::Drawing::Color::Gold;
+			this->panel1->BackColor = System::Drawing::Color::DarkSlateGray;
 			this->panel1->Controls->Add(this->label13);
 			this->panel1->Controls->Add(this->button7);
 			this->panel1->Controls->Add(this->label1);
@@ -328,6 +329,18 @@ private: System::Windows::Forms::Label^ label13;
 			this->panel1->Name = L"panel1";
 			this->panel1->Size = System::Drawing::Size(1009, 83);
 			this->panel1->TabIndex = 0;
+			// 
+			// label13
+			// 
+			this->label13->AutoSize = true;
+			this->label13->Font = (gcnew System::Drawing::Font(L"Tahoma", 18, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Italic)),
+				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+			this->label13->ForeColor = System::Drawing::Color::Lime;
+			this->label13->Location = System::Drawing::Point(3, 51);
+			this->label13->Name = L"label13";
+			this->label13->Size = System::Drawing::Size(129, 29);
+			this->label13->TabIndex = 2;
+			this->label13->Text = L"Hi, Admin";
 			// 
 			// button7
 			// 
@@ -379,7 +392,7 @@ private: System::Windows::Forms::Label^ label13;
 			this->button4->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
 				| System::Windows::Forms::AnchorStyles::Left)
 				| System::Windows::Forms::AnchorStyles::Right));
-			this->button4->BackColor = System::Drawing::Color::Lime;
+			this->button4->BackColor = System::Drawing::Color::White;
 			this->button4->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->button4->Location = System::Drawing::Point(758, 0);
 			this->button4->Name = L"button4";
@@ -417,7 +430,7 @@ private: System::Windows::Forms::Label^ label13;
 			// 
 			// button1
 			// 
-			this->button1->BackColor = System::Drawing::Color::White;
+			this->button1->BackColor = System::Drawing::Color::Lime;
 			this->button1->Dock = System::Windows::Forms::DockStyle::Left;
 			this->button1->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->button1->Location = System::Drawing::Point(0, 0);
@@ -810,7 +823,7 @@ private: System::Windows::Forms::Label^ label13;
 			this->tableLayoutPanel4->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
 				61.05919F)));
 			this->tableLayoutPanel4->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Absolute,
-				189)));
+				193)));
 			this->tableLayoutPanel4->Controls->Add(this->label7, 0, 0);
 			this->tableLayoutPanel4->Controls->Add(this->button5, 2, 0);
 			this->tableLayoutPanel4->Controls->Add(this->comboBox2, 1, 0);
@@ -853,9 +866,9 @@ private: System::Windows::Forms::Label^ label13;
 			this->comboBox2->Dock = System::Windows::Forms::DockStyle::Fill;
 			this->comboBox2->DropDownStyle = System::Windows::Forms::ComboBoxStyle::DropDownList;
 			this->comboBox2->FormattingEnabled = true;
-			this->comboBox2->Location = System::Drawing::Point(276, 3);
+			this->comboBox2->Location = System::Drawing::Point(274, 3);
 			this->comboBox2->Name = L"comboBox2";
-			this->comboBox2->Size = System::Drawing::Size(422, 37);
+			this->comboBox2->Size = System::Drawing::Size(420, 37);
 			this->comboBox2->TabIndex = 4;
 			// 
 			// groupBox1
@@ -1037,18 +1050,6 @@ private: System::Windows::Forms::Label^ label13;
 			this->pn_add->Size = System::Drawing::Size(1009, 462);
 			this->pn_add->TabIndex = 3;
 			// 
-			// label13
-			// 
-			this->label13->AutoSize = true;
-			this->label13->Font = (gcnew System::Drawing::Font(L"Tahoma", 18, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Italic)),
-				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-			this->label13->ForeColor = System::Drawing::Color::ForestGreen;
-			this->label13->Location = System::Drawing::Point(737, 24);
-			this->label13->Name = L"label13";
-			this->label13->Size = System::Drawing::Size(129, 29);
-			this->label13->TabIndex = 2;
-			this->label13->Text = L"Hi, Admin";
-			// 
 			// AdminForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(15, 29);
@@ -1056,8 +1057,8 @@ private: System::Windows::Forms::Label^ label13;
 			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(45)), static_cast<System::Int32>(static_cast<System::Byte>(45)),
 				static_cast<System::Int32>(static_cast<System::Byte>(45)));
 			this->ClientSize = System::Drawing::Size(1009, 617);
-			this->Controls->Add(this->pn_trans);
 			this->Controls->Add(this->pn_show);
+			this->Controls->Add(this->pn_trans);
 			this->Controls->Add(this->pn_find);
 			this->Controls->Add(this->pn_add);
 			this->Controls->Add(this->panel2);

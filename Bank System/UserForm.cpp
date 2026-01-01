@@ -1,18 +1,18 @@
-#include "AdminForm.h"
+#include "UserForm.h"
 #include "LoginForm.h"
 
 using namespace System;
 using namespace System::Windows::Forms;
 
 namespace BankSystem {
-    System::Void AdminForm::button7_Click(System::Object^ sender, System::EventArgs^ e)
+    System::Void UserForm::button7_Click(System::Object^ sender, System::EventArgs^ e)
     {
         this->Hide();
         auto login = gcnew BankSystem::LoginForm();
         login->ShowDialog();
         this->Close();
     }
-    System::Void AdminForm::SetActiveButton(System::Windows::Forms::Button^ active)
+    System::Void UserForm::SetActiveButton(System::Windows::Forms::Button^ active)
     {
         // reset all buttons in panel2 to white
         for each (Control ^ c in this->panel2->Controls)
@@ -26,4 +26,3 @@ namespace BankSystem {
     }
 
 }
-

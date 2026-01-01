@@ -123,7 +123,7 @@ namespace BankSystem {
 			// 
 			// panel1
 			// 
-			this->panel1->BackColor = System::Drawing::Color::Gold;
+			this->panel1->BackColor = System::Drawing::Color::DarkSlateGray;
 			this->panel1->Controls->Add(this->label4);
 			this->panel1->Dock = System::Windows::Forms::DockStyle::Top;
 			this->panel1->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(85)), static_cast<System::Int32>(static_cast<System::Byte>(85)),
