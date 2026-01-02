@@ -195,6 +195,7 @@ private: System::Windows::Forms::DataGridViewTextBoxColumn^ dataGridViewTextBoxC
 private: System::Windows::Forms::DataGridViewTextBoxColumn^ dataGridViewTextBoxColumn3;
 private: System::Windows::Forms::DataGridViewTextBoxColumn^ dataGridViewTextBoxColumn4;
 private: System::Windows::Forms::Label^ label13;
+private: System::Windows::Forms::CheckBox^ checkBox1;
 
 
 
@@ -236,10 +237,10 @@ private: System::Windows::Forms::Label^ label13;
 #pragma region Windows Form Designer generated code
 		void InitializeComponent(void)
 		{
-			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle13 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
-			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle14 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
-			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle15 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
-			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle16 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle1 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle2 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle3 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle4 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
 			this->label13 = (gcnew System::Windows::Forms::Label());
 			this->button7 = (gcnew System::Windows::Forms::Button());
@@ -284,6 +285,7 @@ private: System::Windows::Forms::Label^ label13;
 			this->button5 = (gcnew System::Windows::Forms::Button());
 			this->comboBox2 = (gcnew System::Windows::Forms::ComboBox());
 			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
+			this->checkBox1 = (gcnew System::Windows::Forms::CheckBox());
 			this->button8 = (gcnew System::Windows::Forms::Button());
 			this->tableLayoutPanel1 = (gcnew System::Windows::Forms::TableLayoutPanel());
 			this->textBox5 = (gcnew System::Windows::Forms::TextBox());
@@ -464,15 +466,15 @@ private: System::Windows::Forms::Label^ label13;
 			this->dataGridView1->EnableHeadersVisualStyles = false;
 			this->dataGridView1->Location = System::Drawing::Point(0, 0);
 			this->dataGridView1->Name = L"dataGridView1";
-			dataGridViewCellStyle13->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
-			dataGridViewCellStyle13->BackColor = System::Drawing::SystemColors::Control;
-			dataGridViewCellStyle13->Font = (gcnew System::Drawing::Font(L"Tahoma", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			dataGridViewCellStyle1->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
+			dataGridViewCellStyle1->BackColor = System::Drawing::SystemColors::Control;
+			dataGridViewCellStyle1->Font = (gcnew System::Drawing::Font(L"Tahoma", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			dataGridViewCellStyle13->ForeColor = System::Drawing::SystemColors::WindowText;
-			dataGridViewCellStyle13->SelectionBackColor = System::Drawing::SystemColors::Highlight;
-			dataGridViewCellStyle13->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
-			dataGridViewCellStyle13->WrapMode = System::Windows::Forms::DataGridViewTriState::False;
-			this->dataGridView1->RowHeadersDefaultCellStyle = dataGridViewCellStyle13;
+			dataGridViewCellStyle1->ForeColor = System::Drawing::SystemColors::WindowText;
+			dataGridViewCellStyle1->SelectionBackColor = System::Drawing::SystemColors::Highlight;
+			dataGridViewCellStyle1->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
+			dataGridViewCellStyle1->WrapMode = System::Windows::Forms::DataGridViewTriState::False;
+			this->dataGridView1->RowHeadersDefaultCellStyle = dataGridViewCellStyle1;
 			this->dataGridView1->RowTemplate->Height = 30;
 			this->dataGridView1->Size = System::Drawing::Size(1009, 462);
 			this->dataGridView1->TabIndex = 0;
@@ -751,42 +753,42 @@ private: System::Windows::Forms::Label^ label13;
 			// 
 			this->dataGridView2->AutoSizeColumnsMode = System::Windows::Forms::DataGridViewAutoSizeColumnsMode::Fill;
 			this->dataGridView2->BackgroundColor = System::Drawing::Color::SteelBlue;
-			dataGridViewCellStyle14->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
-			dataGridViewCellStyle14->BackColor = System::Drawing::SystemColors::Control;
-			dataGridViewCellStyle14->Font = (gcnew System::Drawing::Font(L"Tahoma", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			dataGridViewCellStyle2->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
+			dataGridViewCellStyle2->BackColor = System::Drawing::SystemColors::Control;
+			dataGridViewCellStyle2->Font = (gcnew System::Drawing::Font(L"Tahoma", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			dataGridViewCellStyle14->ForeColor = System::Drawing::SystemColors::WindowText;
-			dataGridViewCellStyle14->SelectionBackColor = System::Drawing::SystemColors::Highlight;
-			dataGridViewCellStyle14->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
-			dataGridViewCellStyle14->WrapMode = System::Windows::Forms::DataGridViewTriState::True;
-			this->dataGridView2->ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+			dataGridViewCellStyle2->ForeColor = System::Drawing::SystemColors::WindowText;
+			dataGridViewCellStyle2->SelectionBackColor = System::Drawing::SystemColors::Highlight;
+			dataGridViewCellStyle2->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
+			dataGridViewCellStyle2->WrapMode = System::Windows::Forms::DataGridViewTriState::True;
+			this->dataGridView2->ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
 			this->dataGridView2->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
 			this->dataGridView2->Columns->AddRange(gcnew cli::array< System::Windows::Forms::DataGridViewColumn^  >(4) {
 				this->dataGridViewTextBoxColumn1,
 					this->dataGridViewTextBoxColumn2, this->dataGridViewTextBoxColumn3, this->dataGridViewTextBoxColumn4
 			});
-			dataGridViewCellStyle15->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
-			dataGridViewCellStyle15->BackColor = System::Drawing::SystemColors::Window;
-			dataGridViewCellStyle15->Font = (gcnew System::Drawing::Font(L"Tahoma", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			dataGridViewCellStyle3->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
+			dataGridViewCellStyle3->BackColor = System::Drawing::SystemColors::Window;
+			dataGridViewCellStyle3->Font = (gcnew System::Drawing::Font(L"Tahoma", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			dataGridViewCellStyle15->ForeColor = System::Drawing::SystemColors::ControlText;
-			dataGridViewCellStyle15->SelectionBackColor = System::Drawing::SystemColors::Highlight;
-			dataGridViewCellStyle15->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
-			dataGridViewCellStyle15->WrapMode = System::Windows::Forms::DataGridViewTriState::False;
-			this->dataGridView2->DefaultCellStyle = dataGridViewCellStyle15;
+			dataGridViewCellStyle3->ForeColor = System::Drawing::SystemColors::ControlText;
+			dataGridViewCellStyle3->SelectionBackColor = System::Drawing::SystemColors::Highlight;
+			dataGridViewCellStyle3->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
+			dataGridViewCellStyle3->WrapMode = System::Windows::Forms::DataGridViewTriState::False;
+			this->dataGridView2->DefaultCellStyle = dataGridViewCellStyle3;
 			this->dataGridView2->Dock = System::Windows::Forms::DockStyle::Fill;
 			this->dataGridView2->EnableHeadersVisualStyles = false;
 			this->dataGridView2->Location = System::Drawing::Point(0, 0);
 			this->dataGridView2->Name = L"dataGridView2";
-			dataGridViewCellStyle16->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
-			dataGridViewCellStyle16->BackColor = System::Drawing::SystemColors::Control;
-			dataGridViewCellStyle16->Font = (gcnew System::Drawing::Font(L"Tahoma", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			dataGridViewCellStyle4->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
+			dataGridViewCellStyle4->BackColor = System::Drawing::SystemColors::Control;
+			dataGridViewCellStyle4->Font = (gcnew System::Drawing::Font(L"Tahoma", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			dataGridViewCellStyle16->ForeColor = System::Drawing::SystemColors::WindowText;
-			dataGridViewCellStyle16->SelectionBackColor = System::Drawing::SystemColors::Highlight;
-			dataGridViewCellStyle16->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
-			dataGridViewCellStyle16->WrapMode = System::Windows::Forms::DataGridViewTriState::False;
-			this->dataGridView2->RowHeadersDefaultCellStyle = dataGridViewCellStyle16;
+			dataGridViewCellStyle4->ForeColor = System::Drawing::SystemColors::WindowText;
+			dataGridViewCellStyle4->SelectionBackColor = System::Drawing::SystemColors::Highlight;
+			dataGridViewCellStyle4->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
+			dataGridViewCellStyle4->WrapMode = System::Windows::Forms::DataGridViewTriState::False;
+			this->dataGridView2->RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
 			this->dataGridView2->RowTemplate->Height = 30;
 			this->dataGridView2->Size = System::Drawing::Size(1003, 366);
 			this->dataGridView2->TabIndex = 1;
@@ -823,7 +825,7 @@ private: System::Windows::Forms::Label^ label13;
 			this->tableLayoutPanel4->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
 				61.05919F)));
 			this->tableLayoutPanel4->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Absolute,
-				194)));
+				197)));
 			this->tableLayoutPanel4->Controls->Add(this->label7, 0, 0);
 			this->tableLayoutPanel4->Controls->Add(this->button5, 2, 0);
 			this->tableLayoutPanel4->Controls->Add(this->comboBox2, 1, 0);
@@ -866,13 +868,14 @@ private: System::Windows::Forms::Label^ label13;
 			this->comboBox2->Dock = System::Windows::Forms::DockStyle::Fill;
 			this->comboBox2->DropDownStyle = System::Windows::Forms::ComboBoxStyle::DropDownList;
 			this->comboBox2->FormattingEnabled = true;
-			this->comboBox2->Location = System::Drawing::Point(274, 3);
+			this->comboBox2->Location = System::Drawing::Point(273, 3);
 			this->comboBox2->Name = L"comboBox2";
-			this->comboBox2->Size = System::Drawing::Size(419, 37);
+			this->comboBox2->Size = System::Drawing::Size(417, 37);
 			this->comboBox2->TabIndex = 4;
 			// 
 			// groupBox1
 			// 
+			this->groupBox1->Controls->Add(this->checkBox1);
 			this->groupBox1->Controls->Add(this->button8);
 			this->groupBox1->Controls->Add(this->tableLayoutPanel1);
 			this->groupBox1->Dock = System::Windows::Forms::DockStyle::Fill;
@@ -885,6 +888,21 @@ private: System::Windows::Forms::Label^ label13;
 			this->groupBox1->TabStop = false;
 			this->groupBox1->Text = L" Add New User ";
 			// 
+			// checkBox1
+			// 
+			this->checkBox1->AutoSize = true;
+			this->checkBox1->BackColor = System::Drawing::Color::SteelBlue;
+			this->checkBox1->Font = (gcnew System::Drawing::Font(L"Tahoma", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->checkBox1->ForeColor = System::Drawing::Color::Gold;
+			this->checkBox1->Location = System::Drawing::Point(758, 181);
+			this->checkBox1->Name = L"checkBox1";
+			this->checkBox1->Size = System::Drawing::Size(152, 23);
+			this->checkBox1->TabIndex = 4;
+			this->checkBox1->Text = L"show password";
+			this->checkBox1->UseVisualStyleBackColor = false;
+			this->checkBox1->CheckedChanged += gcnew System::EventHandler(this, &AdminForm::checkBox1_CheckedChanged);
+			// 
 			// button8
 			// 
 			this->button8->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
@@ -894,7 +912,7 @@ private: System::Windows::Forms::Label^ label13;
 			this->button8->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->button8->Font = (gcnew System::Drawing::Font(L"Tahoma", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->button8->Location = System::Drawing::Point(835, 213);
+			this->button8->Location = System::Drawing::Point(786, 325);
 			this->button8->Name = L"button8";
 			this->button8->Size = System::Drawing::Size(141, 72);
 			this->button8->TabIndex = 2;
@@ -1089,6 +1107,7 @@ private: System::Windows::Forms::Label^ label13;
 			this->tableLayoutPanel4->ResumeLayout(false);
 			this->tableLayoutPanel4->PerformLayout();
 			this->groupBox1->ResumeLayout(false);
+			this->groupBox1->PerformLayout();
 			this->tableLayoutPanel1->ResumeLayout(false);
 			this->tableLayoutPanel1->PerformLayout();
 			this->pn_add->ResumeLayout(false);
@@ -1164,18 +1183,18 @@ private: System::Void AdminForm_Load(System::Object^ sender, System::EventArgs^ 
 }
 	private: System::Void button8_Click_1(System::Object^ sender, System::EventArgs^ e)
 	{
+		if (!this->textBox1->Text->Length || !this->textBox2->Text->Length || !this->textBox3->Text->Length || !this->textBox4->Text->Length)
+		{
+			MessageBox::Show("All fields are required.", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+			return;
+		}
+
 		auto& bank = Bank::Instance();
 		std::string ID = marshal_as<std::string>(this->textBox1->Text);
 		std::string name = marshal_as<std::string>(this->textBox2->Text);
 		std::string password = marshal_as<std::string>(this->textBox3->Text);
 		std::string phone = marshal_as<std::string>(this->textBox4->Text);
 		double balance = stod(marshal_as<std::string>(this->textBox5->Text));
-
-		if (ID.empty() || name.empty() || password.empty() || phone.empty())
-		{
-			MessageBox::Show("All fields are required.", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
-			return;
-		}
 		if (balance < 0)
 		{
 			MessageBox::Show("Balance cannot be negative.", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
@@ -1267,6 +1286,10 @@ private: System::Void AdminForm_Load(System::Object^ sender, System::EventArgs^ 
 			System::String^ toUser = marshal_as<System::String^>(t.otherParty);
 			this->dataGridView2->Rows->Add(tid, type, amount, toUser);
 		}
+	}
+	private: System::Void checkBox1_CheckedChanged(System::Object^ sender, System::EventArgs^ e)
+	{
+		this->textBox3->UseSystemPasswordChar = !this->checkBox1->Checked;
 	}
 };
 }

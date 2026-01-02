@@ -118,17 +118,17 @@ private: System::Windows::Forms::Label^ labelNewBalance;
 	private: System::Windows::Forms::TextBox^ textBox6;
 	private: System::Windows::Forms::Label^ label15;
 	private: System::Windows::Forms::Panel^ pn_transfer;
-	private: System::Windows::Forms::GroupBox^ groupBox1;
-	private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel1;
-	private: System::Windows::Forms::Label^ label2;
-	private: System::Windows::Forms::Button^ button8;
-	private: System::Windows::Forms::TextBox^ textBox1;
-	private: System::Windows::Forms::Label^ label3;
-private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel3;
-private: System::Windows::Forms::Label^ label12;
 
-private: System::Windows::Forms::ComboBox^ comboBox1;
-private: System::Windows::Forms::Label^ label4;
+
+
+
+
+
+
+
+
+
+
 private: System::Windows::Forms::Panel^ pn_info;
 private: System::Windows::Forms::GroupBox^ groupBox5;
 private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel2;
@@ -145,6 +145,19 @@ private: System::Windows::Forms::TextBox^ textBox7;
 private: System::Windows::Forms::Button^ button9;
 private: System::Windows::Forms::TextBox^ textBox5;
 private: System::Windows::Forms::Button^ button10;
+private: System::Windows::Forms::CheckBox^ checkBox1;
+private: System::Windows::Forms::GroupBox^ groupBox1;
+private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel3;
+private: System::Windows::Forms::Label^ label12;
+private: System::Windows::Forms::ComboBox^ comboBox1;
+private: System::Windows::Forms::Panel^ panel3;
+private: System::Windows::Forms::Label^ label3;
+private: System::Windows::Forms::Label^ label4;
+private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel1;
+private: System::Windows::Forms::Label^ label2;
+private: System::Windows::Forms::Button^ button8;
+private: System::Windows::Forms::TextBox^ textBox1;
+
 
 
 
@@ -158,9 +171,9 @@ private: System::Windows::Forms::Button^ button10;
 		void InitializeComponent(void)
 		{
 			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(UserForm::typeid));
-			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle10 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
-			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle11 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
-			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle12 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle4 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle5 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle6 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
 			this->button10 = (gcnew System::Windows::Forms::Button());
 			this->label13 = (gcnew System::Windows::Forms::Label());
@@ -194,17 +207,19 @@ private: System::Windows::Forms::Button^ button10;
 			this->label15 = (gcnew System::Windows::Forms::Label());
 			this->pn_transfer = (gcnew System::Windows::Forms::Panel());
 			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
-			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->tableLayoutPanel3 = (gcnew System::Windows::Forms::TableLayoutPanel());
 			this->label12 = (gcnew System::Windows::Forms::Label());
 			this->comboBox1 = (gcnew System::Windows::Forms::ComboBox());
+			this->panel3 = (gcnew System::Windows::Forms::Panel());
+			this->label3 = (gcnew System::Windows::Forms::Label());
+			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->tableLayoutPanel1 = (gcnew System::Windows::Forms::TableLayoutPanel());
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->button8 = (gcnew System::Windows::Forms::Button());
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
-			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->pn_info = (gcnew System::Windows::Forms::Panel());
 			this->groupBox5 = (gcnew System::Windows::Forms::GroupBox());
+			this->checkBox1 = (gcnew System::Windows::Forms::CheckBox());
 			this->button9 = (gcnew System::Windows::Forms::Button());
 			this->tableLayoutPanel2 = (gcnew System::Windows::Forms::TableLayoutPanel());
 			this->textBox5 = (gcnew System::Windows::Forms::TextBox());
@@ -231,6 +246,7 @@ private: System::Windows::Forms::Button^ button10;
 			this->pn_transfer->SuspendLayout();
 			this->groupBox1->SuspendLayout();
 			this->tableLayoutPanel3->SuspendLayout();
+			this->panel3->SuspendLayout();
 			this->tableLayoutPanel1->SuspendLayout();
 			this->pn_info->SuspendLayout();
 			this->groupBox5->SuspendLayout();
@@ -409,7 +425,7 @@ private: System::Windows::Forms::Button^ button10;
 			this->tableLayoutPanel4->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
 				67.38544F)));
 			this->tableLayoutPanel4->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Absolute,
-				215)));
+				220)));
 			this->tableLayoutPanel4->Controls->Add(this->label7, 0, 0);
 			this->tableLayoutPanel4->Controls->Add(this->button6, 2, 0);
 			this->tableLayoutPanel4->Controls->Add(this->textBox14, 1, 0);
@@ -429,7 +445,7 @@ private: System::Windows::Forms::Button^ button10;
 			this->label7->Location = System::Drawing::Point(0, 5);
 			this->label7->Margin = System::Windows::Forms::Padding(0, 5, 0, 5);
 			this->label7->Name = L"label7";
-			this->label7->Size = System::Drawing::Size(107, 34);
+			this->label7->Size = System::Drawing::Size(97, 34);
 			this->label7->TabIndex = 3;
 			this->label7->Text = L"Amount:";
 			this->label7->TextAlign = System::Drawing::ContentAlignment::MiddleRight;
@@ -450,9 +466,9 @@ private: System::Windows::Forms::Button^ button10;
 			// textBox14
 			// 
 			this->textBox14->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->textBox14->Location = System::Drawing::Point(110, 3);
+			this->textBox14->Location = System::Drawing::Point(109, 3);
 			this->textBox14->Name = L"textBox14";
-			this->textBox14->Size = System::Drawing::Size(217, 36);
+			this->textBox14->Size = System::Drawing::Size(213, 36);
 			this->textBox14->TabIndex = 4;
 			this->textBox14->TextChanged += gcnew System::EventHandler(this, &UserForm::textBox14_TextChanged);
 			this->textBox14->KeyPress += gcnew System::Windows::Forms::KeyPressEventHandler(this, &UserForm::NumericTextBox_KeyPress);
@@ -494,42 +510,42 @@ private: System::Windows::Forms::Button^ button10;
 			// 
 			this->dataGridView2->AutoSizeColumnsMode = System::Windows::Forms::DataGridViewAutoSizeColumnsMode::Fill;
 			this->dataGridView2->BackgroundColor = System::Drawing::Color::SteelBlue;
-			dataGridViewCellStyle10->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
-			dataGridViewCellStyle10->BackColor = System::Drawing::SystemColors::Control;
-			dataGridViewCellStyle10->Font = (gcnew System::Drawing::Font(L"Tahoma", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			dataGridViewCellStyle4->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
+			dataGridViewCellStyle4->BackColor = System::Drawing::SystemColors::Control;
+			dataGridViewCellStyle4->Font = (gcnew System::Drawing::Font(L"Tahoma", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			dataGridViewCellStyle10->ForeColor = System::Drawing::SystemColors::WindowText;
-			dataGridViewCellStyle10->SelectionBackColor = System::Drawing::SystemColors::Highlight;
-			dataGridViewCellStyle10->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
-			dataGridViewCellStyle10->WrapMode = System::Windows::Forms::DataGridViewTriState::True;
-			this->dataGridView2->ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+			dataGridViewCellStyle4->ForeColor = System::Drawing::SystemColors::WindowText;
+			dataGridViewCellStyle4->SelectionBackColor = System::Drawing::SystemColors::Highlight;
+			dataGridViewCellStyle4->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
+			dataGridViewCellStyle4->WrapMode = System::Windows::Forms::DataGridViewTriState::True;
+			this->dataGridView2->ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
 			this->dataGridView2->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
 			this->dataGridView2->Columns->AddRange(gcnew cli::array< System::Windows::Forms::DataGridViewColumn^  >(4) {
 				this->dataGridViewTextBoxColumn1,
 					this->dataGridViewTextBoxColumn2, this->dataGridViewTextBoxColumn3, this->dataGridViewTextBoxColumn4
 			});
-			dataGridViewCellStyle11->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
-			dataGridViewCellStyle11->BackColor = System::Drawing::SystemColors::Window;
-			dataGridViewCellStyle11->Font = (gcnew System::Drawing::Font(L"Tahoma", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			dataGridViewCellStyle5->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
+			dataGridViewCellStyle5->BackColor = System::Drawing::SystemColors::Window;
+			dataGridViewCellStyle5->Font = (gcnew System::Drawing::Font(L"Tahoma", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			dataGridViewCellStyle11->ForeColor = System::Drawing::SystemColors::ControlText;
-			dataGridViewCellStyle11->SelectionBackColor = System::Drawing::SystemColors::Highlight;
-			dataGridViewCellStyle11->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
-			dataGridViewCellStyle11->WrapMode = System::Windows::Forms::DataGridViewTriState::False;
-			this->dataGridView2->DefaultCellStyle = dataGridViewCellStyle11;
+			dataGridViewCellStyle5->ForeColor = System::Drawing::SystemColors::ControlText;
+			dataGridViewCellStyle5->SelectionBackColor = System::Drawing::SystemColors::Highlight;
+			dataGridViewCellStyle5->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
+			dataGridViewCellStyle5->WrapMode = System::Windows::Forms::DataGridViewTriState::False;
+			this->dataGridView2->DefaultCellStyle = dataGridViewCellStyle5;
 			this->dataGridView2->Dock = System::Windows::Forms::DockStyle::Fill;
 			this->dataGridView2->EnableHeadersVisualStyles = false;
 			this->dataGridView2->Location = System::Drawing::Point(3, 32);
 			this->dataGridView2->Name = L"dataGridView2";
-			dataGridViewCellStyle12->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
-			dataGridViewCellStyle12->BackColor = System::Drawing::SystemColors::Control;
-			dataGridViewCellStyle12->Font = (gcnew System::Drawing::Font(L"Tahoma", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			dataGridViewCellStyle6->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
+			dataGridViewCellStyle6->BackColor = System::Drawing::SystemColors::Control;
+			dataGridViewCellStyle6->Font = (gcnew System::Drawing::Font(L"Tahoma", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			dataGridViewCellStyle12->ForeColor = System::Drawing::SystemColors::WindowText;
-			dataGridViewCellStyle12->SelectionBackColor = System::Drawing::SystemColors::Highlight;
-			dataGridViewCellStyle12->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
-			dataGridViewCellStyle12->WrapMode = System::Windows::Forms::DataGridViewTriState::False;
-			this->dataGridView2->RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+			dataGridViewCellStyle6->ForeColor = System::Drawing::SystemColors::WindowText;
+			dataGridViewCellStyle6->SelectionBackColor = System::Drawing::SystemColors::Highlight;
+			dataGridViewCellStyle6->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
+			dataGridViewCellStyle6->WrapMode = System::Windows::Forms::DataGridViewTriState::False;
+			this->dataGridView2->RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
 			this->dataGridView2->RowTemplate->Height = 30;
 			this->dataGridView2->Size = System::Drawing::Size(1003, 427);
 			this->dataGridView2->TabIndex = 1;
@@ -590,7 +606,7 @@ private: System::Windows::Forms::Button^ button10;
 			this->tableLayoutPanel5->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
 				67.38544F)));
 			this->tableLayoutPanel5->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Absolute,
-				215)));
+				220)));
 			this->tableLayoutPanel5->Controls->Add(this->label14, 0, 0);
 			this->tableLayoutPanel5->Controls->Add(this->button5, 2, 0);
 			this->tableLayoutPanel5->Controls->Add(this->textBox6, 1, 0);
@@ -610,7 +626,7 @@ private: System::Windows::Forms::Button^ button10;
 			this->label14->Location = System::Drawing::Point(0, 5);
 			this->label14->Margin = System::Windows::Forms::Padding(0, 5, 0, 5);
 			this->label14->Name = L"label14";
-			this->label14->Size = System::Drawing::Size(107, 34);
+			this->label14->Size = System::Drawing::Size(97, 34);
 			this->label14->TabIndex = 3;
 			this->label14->Text = L"Amount:";
 			this->label14->TextAlign = System::Drawing::ContentAlignment::MiddleRight;
@@ -631,9 +647,9 @@ private: System::Windows::Forms::Button^ button10;
 			// textBox6
 			// 
 			this->textBox6->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->textBox6->Location = System::Drawing::Point(110, 3);
+			this->textBox6->Location = System::Drawing::Point(109, 3);
 			this->textBox6->Name = L"textBox6";
-			this->textBox6->Size = System::Drawing::Size(217, 36);
+			this->textBox6->Size = System::Drawing::Size(213, 36);
 			this->textBox6->TabIndex = 4;
 			this->textBox6->TextChanged += gcnew System::EventHandler(this, &UserForm::textBox6_TextChanged);
 			this->textBox6->KeyPress += gcnew System::Windows::Forms::KeyPressEventHandler(this, &UserForm::NumericTextBox_KeyPress);
@@ -660,10 +676,8 @@ private: System::Windows::Forms::Button^ button10;
 			// 
 			// groupBox1
 			// 
-			this->groupBox1->Controls->Add(this->label4);
 			this->groupBox1->Controls->Add(this->tableLayoutPanel3);
-			this->groupBox1->Controls->Add(this->tableLayoutPanel1);
-			this->groupBox1->Controls->Add(this->label3);
+			this->groupBox1->Controls->Add(this->panel3);
 			this->groupBox1->Dock = System::Windows::Forms::DockStyle::Fill;
 			this->groupBox1->Font = (gcnew System::Drawing::Font(L"Tahoma", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
@@ -673,16 +687,6 @@ private: System::Windows::Forms::Button^ button10;
 			this->groupBox1->TabIndex = 4;
 			this->groupBox1->TabStop = false;
 			this->groupBox1->Text = L"Transfer ";
-			// 
-			// label4
-			// 
-			this->label4->AutoSize = true;
-			this->label4->ForeColor = System::Drawing::Color::Lime;
-			this->label4->Location = System::Drawing::Point(630, 161);
-			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(59, 29);
-			this->label4->TabIndex = 202;
-			this->label4->Text = L"To: ";
 			// 
 			// tableLayoutPanel3
 			// 
@@ -725,6 +729,36 @@ private: System::Windows::Forms::Button^ button10;
 			this->comboBox1->TabIndex = 4;
 			this->comboBox1->SelectedIndexChanged += gcnew System::EventHandler(this, &UserForm::comboBox1_SelectedIndexChanged);
 			// 
+			// panel3
+			// 
+			this->panel3->Controls->Add(this->label3);
+			this->panel3->Controls->Add(this->label4);
+			this->panel3->Controls->Add(this->tableLayoutPanel1);
+			this->panel3->Location = System::Drawing::Point(161, 91);
+			this->panel3->Name = L"panel3";
+			this->panel3->Size = System::Drawing::Size(848, 114);
+			this->panel3->TabIndex = 203;
+			// 
+			// label3
+			// 
+			this->label3->Font = (gcnew System::Drawing::Font(L"Tahoma", 14, System::Drawing::FontStyle::Bold));
+			this->label3->ForeColor = System::Drawing::Color::Black;
+			this->label3->Location = System::Drawing::Point(64, 69);
+			this->label3->Name = L"label3";
+			this->label3->Size = System::Drawing::Size(400, 30);
+			this->label3->TabIndex = 200;
+			this->label3->Text = L"New balance: 0.00";
+			// 
+			// label4
+			// 
+			this->label4->AutoSize = true;
+			this->label4->ForeColor = System::Drawing::Color::Lime;
+			this->label4->Location = System::Drawing::Point(469, 69);
+			this->label4->Name = L"label4";
+			this->label4->Size = System::Drawing::Size(59, 29);
+			this->label4->TabIndex = 202;
+			this->label4->Text = L"To: ";
+			// 
 			// tableLayoutPanel1
 			// 
 			this->tableLayoutPanel1->ColumnCount = 3;
@@ -733,11 +767,11 @@ private: System::Windows::Forms::Button^ button10;
 			this->tableLayoutPanel1->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
 				67.38544F)));
 			this->tableLayoutPanel1->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Absolute,
-				195)));
+				200)));
 			this->tableLayoutPanel1->Controls->Add(this->label2, 0, 0);
 			this->tableLayoutPanel1->Controls->Add(this->button8, 2, 0);
 			this->tableLayoutPanel1->Controls->Add(this->textBox1, 1, 0);
-			this->tableLayoutPanel1->Location = System::Drawing::Point(223, 99);
+			this->tableLayoutPanel1->Location = System::Drawing::Point(63, 13);
 			this->tableLayoutPanel1->Name = L"tableLayoutPanel1";
 			this->tableLayoutPanel1->RowCount = 1;
 			this->tableLayoutPanel1->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 50)));
@@ -774,22 +808,12 @@ private: System::Windows::Forms::Button^ button10;
 			// textBox1
 			// 
 			this->textBox1->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->textBox1->Location = System::Drawing::Point(121, 3);
+			this->textBox1->Location = System::Drawing::Point(120, 3);
 			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(239, 36);
+			this->textBox1->Size = System::Drawing::Size(235, 36);
 			this->textBox1->TabIndex = 4;
 			this->textBox1->TextChanged += gcnew System::EventHandler(this, &UserForm::textBox1_TextChanged);
 			this->textBox1->KeyPress += gcnew System::Windows::Forms::KeyPressEventHandler(this, &UserForm::NumericTextBox_KeyPress);
-			// 
-			// label3
-			// 
-			this->label3->Font = (gcnew System::Drawing::Font(L"Tahoma", 14, System::Drawing::FontStyle::Bold));
-			this->label3->ForeColor = System::Drawing::Color::Black;
-			this->label3->Location = System::Drawing::Point(224, 160);
-			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(400, 30);
-			this->label3->TabIndex = 200;
-			this->label3->Text = L"New balance: 0.00";
 			// 
 			// pn_info
 			// 
@@ -803,6 +827,7 @@ private: System::Windows::Forms::Button^ button10;
 			// 
 			// groupBox5
 			// 
+			this->groupBox5->Controls->Add(this->checkBox1);
 			this->groupBox5->Controls->Add(this->button9);
 			this->groupBox5->Controls->Add(this->tableLayoutPanel2);
 			this->groupBox5->Dock = System::Windows::Forms::DockStyle::Fill;
@@ -814,6 +839,20 @@ private: System::Windows::Forms::Button^ button10;
 			this->groupBox5->TabIndex = 4;
 			this->groupBox5->TabStop = false;
 			this->groupBox5->Text = L" Profile Info  ";
+			// 
+			// checkBox1
+			// 
+			this->checkBox1->AutoSize = true;
+			this->checkBox1->Font = (gcnew System::Drawing::Font(L"Tahoma", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->checkBox1->ForeColor = System::Drawing::Color::Gold;
+			this->checkBox1->Location = System::Drawing::Point(745, 211);
+			this->checkBox1->Name = L"checkBox1";
+			this->checkBox1->Size = System::Drawing::Size(152, 23);
+			this->checkBox1->TabIndex = 3;
+			this->checkBox1->Text = L"show password";
+			this->checkBox1->UseVisualStyleBackColor = true;
+			this->checkBox1->CheckedChanged += gcnew System::EventHandler(this, &UserForm::checkBox1_CheckedChanged);
 			// 
 			// button9
 			// 
@@ -974,8 +1013,8 @@ private: System::Windows::Forms::Button^ button10;
 				static_cast<System::Int32>(static_cast<System::Byte>(45)));
 			this->ClientSize = System::Drawing::Size(1009, 617);
 			this->Controls->Add(this->pn_withdraw);
-			this->Controls->Add(this->pn_info);
 			this->Controls->Add(this->pn_transfer);
+			this->Controls->Add(this->pn_info);
 			this->Controls->Add(this->pn_deposit);
 			this->Controls->Add(this->pn_show);
 			this->Controls->Add(this->panel2);
@@ -1003,13 +1042,15 @@ private: System::Windows::Forms::Button^ button10;
 			this->tableLayoutPanel5->PerformLayout();
 			this->pn_transfer->ResumeLayout(false);
 			this->groupBox1->ResumeLayout(false);
-			this->groupBox1->PerformLayout();
 			this->tableLayoutPanel3->ResumeLayout(false);
 			this->tableLayoutPanel3->PerformLayout();
+			this->panel3->ResumeLayout(false);
+			this->panel3->PerformLayout();
 			this->tableLayoutPanel1->ResumeLayout(false);
 			this->tableLayoutPanel1->PerformLayout();
 			this->pn_info->ResumeLayout(false);
 			this->groupBox5->ResumeLayout(false);
+			this->groupBox5->PerformLayout();
 			this->tableLayoutPanel2->ResumeLayout(false);
 			this->tableLayoutPanel2->PerformLayout();
 			this->ResumeLayout(false);
@@ -1093,7 +1134,7 @@ private: System::Windows::Forms::Button^ button10;
 		if (e->KeyChar == '\b' || !tb) return;
 		// allow digits, one decimal point, and backspace
 		int decimal_index = tb->Text->IndexOf('.');
-		if (~decimal_index && decimal_index == tb->Text->Length - 2 || tb->Text->Length > 14)
+		if (~decimal_index && decimal_index == tb->Text->Length - 3 || tb->Text->Length > 10)
 		{
 			e->Handled = true; // disallow more than 2 decimal places and max length
 			return;
@@ -1236,7 +1277,7 @@ private: System::Windows::Forms::Button^ button10;
 	{
 		if (!~this->comboBox1->SelectedIndex || !this->textBox1->Text->Length)
 		{
-			MessageBox::Show("All feilds are required!", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+			MessageBox::Show("All fields are required!", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
 			return;
 		}
 
@@ -1267,6 +1308,10 @@ private: System::Windows::Forms::Button^ button10;
 		this->label13->Text = "Hi, " + this->textBox2->Text;
 		this->button10->PerformClick();
 		MessageBox::Show("Profile updated successfully.", "Success", MessageBoxButtons::OK, MessageBoxIcon::Information);
+	}
+	private: System::Void checkBox1_CheckedChanged(System::Object^ sender, System::EventArgs^ e)
+	{
+		this->textBox3->UseSystemPasswordChar = !this->checkBox1->Checked;
 	}
 };
 }

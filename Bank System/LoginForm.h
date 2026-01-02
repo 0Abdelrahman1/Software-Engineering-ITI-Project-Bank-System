@@ -44,6 +44,7 @@ namespace BankSystem {
 	private: System::Windows::Forms::Panel^ panel1;
 
 	private: System::Windows::Forms::Label^ label4;
+	private: System::Windows::Forms::CheckBox^ checkBox1;
 
 
 	private:
@@ -66,6 +67,7 @@ namespace BankSystem {
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
 			this->label4 = (gcnew System::Windows::Forms::Label());
+			this->checkBox1 = (gcnew System::Windows::Forms::CheckBox());
 			this->panel1->SuspendLayout();
 			this->SuspendLayout();
 			// 
@@ -148,6 +150,20 @@ namespace BankSystem {
 			this->label4->Text = L"BANK";
 			this->label4->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
+			// checkBox1
+			// 
+			this->checkBox1->AutoSize = true;
+			this->checkBox1->Font = (gcnew System::Drawing::Font(L"Tahoma", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->checkBox1->ForeColor = System::Drawing::Color::Gold;
+			this->checkBox1->Location = System::Drawing::Point(720, 331);
+			this->checkBox1->Name = L"checkBox1";
+			this->checkBox1->Size = System::Drawing::Size(152, 23);
+			this->checkBox1->TabIndex = 6;
+			this->checkBox1->Text = L"show password";
+			this->checkBox1->UseVisualStyleBackColor = true;
+			this->checkBox1->CheckedChanged += gcnew System::EventHandler(this, &LoginForm::checkBox1_CheckedChanged);
+			// 
 			// LoginForm
 			// 
 			this->AcceptButton = this->button1;
@@ -156,6 +172,7 @@ namespace BankSystem {
 			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(45)), static_cast<System::Int32>(static_cast<System::Byte>(45)),
 				static_cast<System::Int32>(static_cast<System::Byte>(45)));
 			this->ClientSize = System::Drawing::Size(1008, 616);
+			this->Controls->Add(this->checkBox1);
 			this->Controls->Add(this->panel1);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->textBox2);
@@ -181,7 +198,11 @@ namespace BankSystem {
 	}
 private: System::Void label2_Click_1(System::Object^ sender, System::EventArgs^ e) {
 }
-private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e);
+	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e);
 
+	private: System::Void checkBox1_CheckedChanged(System::Object^ sender, System::EventArgs^ e) 
+	{
+		textBox2->UseSystemPasswordChar = !checkBox1->Checked;
+	}
 };
 }
